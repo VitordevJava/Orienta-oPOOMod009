@@ -68,4 +68,14 @@ public class Aluno {
 	public double getMediaFinal() {
 		return (Nota1 + Nota2 + Nota3 + Nota4) / 4;
 	}
+
+	public boolean getResultado() {
+		double Media = this.getMediaFinal();
+		if (Media >= 70) {
+			return true;
+
+		} else {
+			return false;
+		}
+	}
 }
